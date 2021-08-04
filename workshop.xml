@@ -1,0 +1,13 @@
+<Mod
+	name="Ride Minecarts!"
+	tags="funny,gameplay"
+    dont_upload_folders="Exclude|.history"
+    dont_upload_files="mod_id.txt"
+></Mod>
+
+<!-- Common Problems with uploading the mod
+
+~ Make sure your using the right workshop_upload.bat (located in C:\Program Files (x86)\Steam\steamapps\common\Noita)
+~ Make sure the image preview in your mod is an actual image
+~ Make sure to ignore uneeded files
+-->

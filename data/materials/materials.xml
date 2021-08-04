@@ -1,0 +1,34 @@
+<Materials>
+    <CellDataChild
+        _parent="aluminium"
+        _inherit_reactions="1"
+        tags="[box2d],[alchemy],[meltable_metal],[solid]"
+
+        name="Mod_Minecart_unbreakable"
+        ui_name="$Mod_Minecart_unbreakable"
+        
+        platform_type="1"
+        wang_color="ff222222"
+        electrical_conductivity="1"
+        audio_physics_material_event="metalhollow"
+        audio_physics_material_wall="metalhollow"
+        audio_physics_material_solid="metalhollow" 
+        hp="99999999999999999999999999"
+    ></CellDataChild>
+
+    <CellDataChild
+        _parent="aluminium"
+        _inherit_reactions="1"
+        tags="[box2d],[alchemy],[meltable_metal],[solid]"
+
+        name="Mod_Minecart_breakable"
+        ui_name="$Mod_Minecart_breakable"
+        
+        platform_type="1"
+        wang_color="ff111111"
+        electrical_conductivity="1"
+        audio_physics_material_event="metalhollow"
+        audio_physics_material_wall="metalhollow"
+        audio_physics_material_solid="metalhollow" 
+    ></CellDataChild>
+</Materials>

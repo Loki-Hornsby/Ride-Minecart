@@ -1,0 +1,93 @@
+<!-- This is a modded version of the minecart for the spawn! -->
+<!-- Older version: Nolla_Games_Noita\data\entities\props\physics_minecart.xml -->
+<!-- Newer version: Nolla_Games_Noita\data\entities\props\physics\minecart.xml -->
+<!-- Remeber to apply > is_root="1" < -->
+
+<Entity name="minecart_modded" tags="hittable,prop,prop_physics" serialize="1">
+    <PhysicsBodyComponent 
+        uid="1" 
+        allow_sleep="1" 
+        angular_damping="0" 
+        fixed_rotation="0" 
+        is_bullet="0" 
+        linear_damping="0"
+        auto_clean="0"
+        on_death_leave_physics_body="1" 
+        kills_entity="0"
+    ></PhysicsBodyComponent>
+
+    <PhysicsImageShapeComponent
+        body_id="1"
+        centered="1"
+        image_file="mods/Ride Minecart/data/images/minecart.png"
+        material="Mod_Minecart_breakable" 
+    ></PhysicsImageShapeComponent>
+
+    <PhysicsBodyComponent 
+        uid="2" 
+        allow_sleep="1" 
+        angular_damping="25" 
+        fixed_rotation="0" 
+        is_bullet="0" 
+        linear_damping="0"
+        auto_clean="0"
+        update_entity_transform="0"
+        on_death_leave_physics_body="1"
+        kills_entity="0"
+    ></PhysicsBodyComponent>
+
+    <PhysicsImageShapeComponent 
+        body_id="2"
+        centered="1"
+        is_circle="1"
+        image_file="mods/Ride Minecart/data/images/minecart_wheel_left.png"
+        z="-1"
+        material="Mod_Minecart_breakable" 
+    ></PhysicsImageShapeComponent>
+
+    <PhysicsBodyComponent 
+        uid="3" 
+        allow_sleep="1" 
+        angular_damping="25" 
+        fixed_rotation="0" 
+        is_bullet="0" 
+        linear_damping="0"
+        auto_clean="0" 
+        update_entity_transform="0"
+        on_death_leave_physics_body="1"
+        kills_entity="0"
+    ></PhysicsBodyComponent>
+
+    <PhysicsImageShapeComponent 
+        body_id="3"
+        centered="1"
+        is_circle="1"
+        image_file="mods/Ride Minecart/data/images/minecart_wheel_right.png"
+        z="-1"
+        material="Mod_Minecart_breakable" 
+    ></PhysicsImageShapeComponent>
+
+    <PhysicsJointComponent 
+        body1_id="1"
+        body2_id="2"        
+        pos_x="4"        
+        pos_y="12"            
+    ></PhysicsJointComponent>
+
+    <PhysicsJointComponent 
+        body1_id="1"
+        body2_id="3"        
+        pos_x="13"        
+        pos_y="12"            
+    ></PhysicsJointComponent>
+
+    <LuaComponent
+        script_interacting = "mods/Ride Minecart/files/interactions.lua"
+    ></LuaComponent>
+
+    <InteractableComponent
+        radius = "20"
+        ui_text = "Press $0 to enter the minecart!"
+        name = "minecart_interact_enter"
+    ></InteractableComponent>
+</Entity>
