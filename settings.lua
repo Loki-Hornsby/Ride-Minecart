@@ -26,6 +26,37 @@ mod_settings =
 		scope = MOD_SETTING_SCOPE_NEW_GAME,
 		change_fn = mod_setting_change_callback, -- Called when the user interact with the settings widget.
 	},
+
+	{
+		id = "ui_M_only",
+		ui_name = "Minecart Only Run",
+		ui_description = "If you exit the minecart you die.",
+		value_default = false,
+	
+		scope = MOD_SETTING_SCOPE_NEW_GAME,
+		change_fn = mod_setting_change_callback,
+	},
+
+	{
+		id = "ui_Weapons",
+		ui_name = "Can you use weapons in the minecart?",
+		ui_description = "If you exit the minecart you die.",
+		value_default = true,
+	
+		scope = MOD_SETTING_SCOPE_NEW_GAME,
+		change_fn = mod_setting_change_callback,
+	},
+
+	{
+		id = "ui_Entrance",
+		ui_name = "Can you use weapons in the minecart?",
+		ui_description = "If you exit the minecart you die.",
+		value_default = true,
+	
+		scope = MOD_SETTING_SCOPE_NEW_GAME,
+		change_fn = mod_setting_change_callback,
+	},
+
 	--[[
 	{
 		id = "ui_Telekenetic",
