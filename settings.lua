@@ -39,18 +39,8 @@ mod_settings =
 
 	{
 		id = "ui_Weapons",
-		ui_name = "Can you use weapons in the minecart?",
-		ui_description = "If you exit the minecart you die.",
-		value_default = true,
-	
-		scope = MOD_SETTING_SCOPE_NEW_GAME,
-		change_fn = mod_setting_change_callback,
-	},
-
-	{
-		id = "ui_Entrance",
-		ui_name = "Can you use weapons in the minecart?",
-		ui_description = "If you exit the minecart you die.",
+		ui_name = "Weapons?",
+		ui_description = "Can you use weapons in the minecart?",
 		value_default = true,
 	
 		scope = MOD_SETTING_SCOPE_NEW_GAME,
